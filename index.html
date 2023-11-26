@@ -2,42 +2,197 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Ukhfee Coffee Shop</title>
-    
+    <title>Let's get COMFFEE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    <header>
-        <h1>Ukhfee Coffee Shop</h1>
-    </header>
 
-    <section>
-        <h2>Menu</h2>
+        <header>
+            <a href="#home" class="logo">
+                <img src="img/logo.png" alt="COMFFEE">
+            </a>
+            <i class="bx bx-menu" id="menu-icon"></i>
 
-        <div class="menu-item">
-            <span>Americano</span>
-            <span>$2.50</span>
-        </div>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">products</a></li>
+                <li><a href="#feedbacks">Feedbacks</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
 
-        <div class="menu-item">
-            <span>Latte</span>
-            <span>$3.00</span>
-        </div>
+            <div class="header-icon">
+                <i class='bx bx-cart-add'id="cart-icon" ></i>
+                <i class='bx bx-search-alt-2' id="search-icon"></i>
+            </div>
 
-        <div class="menu-item">
-            <span>Cappuccino</span>
-            <span>$3.50</span>
-        </div>
+            <div class="search-box">
+                <input type="search" name="" placeholder="Search Product Here....">
+            </div>
+        </header>
 
-        <button onclick="placeOrder()">Place Order</button>
-    </section>
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Make your day<br>comfy with coffee</h1>
+                <p>Coffee can boost your mood, energy, and productivity, while also providing a comforting and enjoyable moment in your day.</p>
+                <a href="#products" class="btn">Order Now</a>
+            </div>
+            <div class="home-img">
+                <img src="img/main.png" alt=""
+            </div>
+        </section>
 
-    <section id="order-summary">
-        <h2>Order Summary</h2>
-        <p id="summary-text"></p>
-    </section>
+        <section class="about" id="about">
+            <div class="abut-img">
+                <img src="img/about.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h2>Our Comffee History</h2>
+                <p>Our coffee shop started as a small business with a purpose to provide a comfortable and cozy atmosphere to brighten customers' day with high-quality coffee </p>
+                <p> As our business grew, we continued to prioritize the customer experience, always striving to make our coffee shop a place where people could feel comfortable and at home.</p>
+                <p>Today, it is a beloved local spot that prioritizes the customer experience and remains a cherished part of the community.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
 
-    <script src="orders.js"></script>
-</body>
+        </section>
+            <section class="products" id="products">
+                <div class="heading">
+                    <h2>Our Popular Products</h2>
+
+                </div>
+                <div class="products-container">
+                    <div class="box" class="img-magnifier-container">
+                        <img id="myimage" src="img/p1.png" alt="">
+                        <h3>Black Ivory Coffee</h3>
+                        <div class="content">
+                            <span>Php 723.00</span>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/p2.png" alt="">
+                        <h3>Cafe Botero</h3>
+                        <div class="content">
+                            <span>Php 350.00</span>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/p3.png" alt="">
+                        <h3>Patch Roast</h3>
+                        <div class="content">
+                            <span>Php 820.00</span>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/p4.png" alt="">
+                        <h3>Blue Mountain Coffee</h3>
+                        <div class="content">
+                            <span>Php 640.00</span>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="img/p5.png" alt="">
+                        <h3>Sacred Ground</h3>
+                        <div class="content">
+                            <span>Php 920.00</span>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img id="myimage" src="img/p6.png" alt="">
+                        <h3>Presto Black Beans</h3>
+                        <div class="content">
+                            <span>Php 390.00</span>
+                            <a href="#">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+             <section class="feedbacks" id="feedbacks">
+                <div class="heading">
+                    <h2>Our Customer's Feedback</h2>
+                </div>
+                <div class="feedbacks-container">
+                    <div class="box">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    <p>"This coffee shop is amazing! The coffee is always so fresh and delicious, and the staff is incredibly friendly and welcoming. It's my go-to spot for a cozy cup of coffee."</p>
+                    <h2>Haron Dimala</h2>
+                    <img src="img/rev1.jpg" alt="">
+                </div>
+                        <div class="box">
+                            <div class="stars">
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star'></i>
+                                <i class='bx bxs-star-half'></i>
+                            </div>
+                        <p>""I absolutely love the vibe of this coffee shop. It's the perfect spot to hang out and work or catch up with friends, and the coffee is just the cherry on top. I always leave feeling productive and energized, thanks to the great atmosphere and amazing coffee."</p>
+                        <h2>Haninah Haron</h2>
+                        <img src="img/rev2.jpg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="stars">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    <p>"I can't say enough good things about this coffee shop. The drinks are always top-notch, and the baked goods are to die for. Plus, the staff is always so attentive and friendly - they really go above and beyond to make sure you have a great experience."</p>
+                    <h2>Lovely Pimentel</h2>
+                    <img src="img/rev3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-box">
+                <h2>Comffee Shop</h2>
+                <p>Follow Us </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com" target="_blank" ><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.tiktok.com/login" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                </div>                
+            </div>
+            <div class="footer-box">
+                <h3>Support Us</h3>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+            </div>
+            <div class="footer-box">
+                <h3>View Guides</h3>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog Posts</a></li>
+                <li><a href="#">Our Branches</a></li>
+            </div>
+            <div class="footer-box">
+                <h3>Contacts</h3>
+                <div class="contacts">
+                    <span><i class='bx bxs-map'></i>143 Singapore Cagayan de Oro City, Philippines 9000</span>
+                    <span><i class='bx bxs-phone'></i>+639043477482</span>
+                    <span><i class='bx bxs-envelope'></i>comffee@shop.com</span>
+                </div>
+            </div>
+        </section>
+<script src="main.js"></script>
+</bod>
 </html>
