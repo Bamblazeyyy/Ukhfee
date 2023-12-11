@@ -401,7 +401,7 @@ html.magnifying > body {
     top: 50%;
     left: 0;
     width: 100%;
-    color: #ede4e4;
+    color: #000000;
     content: 'Loading...';
     font: italic normal 16px/1 Calibri, sans-serif;
     letter-spacing: 1px;
